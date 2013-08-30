@@ -10,7 +10,7 @@ var types = {
   boolean: true,
   date: new Date(),
   element: document.createElement('div'),
-  funct: function(){},
+  function: function(){},
   null: null,
   number: 42,
   regexp: /a/,
