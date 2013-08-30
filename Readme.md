@@ -1,5 +1,5 @@
 # is
-  
+
   Simple type checking.
 
 ## Installation
@@ -16,7 +16,7 @@ is.array([]);              // true
 is.boolean(true);          // true
 is.date(new Date);         // true
 is.element(document.body); // true
-is.function(function(){}); // true
+is.funct(function(){}); // true
 is.fn(function(){});       // true
 is.null(null);             // true
 is.number(42);             // true
@@ -26,8 +26,6 @@ is.string('A');            // true
 is.undefined(undefined);   // true
 is.empty([]);              // true
 ```
-
-_Note: If you need old browser support, us `.fn` instead of `.function`._
 
 ## License
 

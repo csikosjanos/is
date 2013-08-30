@@ -13,7 +13,7 @@ var types = [
   'boolean',
   'date',
   'element',
-  'function',
+  'funct',
   'null',
   'number',
   'object',
@@ -30,14 +30,10 @@ var types = [
  * @return {Boolean}
  */
 
-for (var i = 0, type; type = types[i]; i++) exports[type] = generate(type);
-
-
-/**
- * Add alias for `function` for old browsers.
- */
-
-exports.fn = exports.function;
+for (var i = 0, type; type = types[i]; i++) {
+  var type2 = type === 'funct' ? 'function' : type;
+  exports[type] = generate(type2);
+}
 
 
 /**
